@@ -14,7 +14,7 @@
         <div class="col-lg-6 col-md-12 order-md-3">
             {% if deck_list|length == 0 %}
                 <div>
-                    没有deck.
+                    No deck.
                 </div>
             {% else %}
                 <ul class="list-group">
@@ -25,7 +25,7 @@
                 </li>
                 {% endfor %}
                 </ul>
-                <div>今天花了{{thetime}}秒, 学了{{cards}}张卡片</div>
+                <div>Spent today: {{thetime}} seconds, studied {{cards}} cards</div>
             {% endif %}
         </div>
 

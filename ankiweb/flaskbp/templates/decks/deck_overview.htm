@@ -15,36 +15,36 @@
           <center><h2>{{deck.name}}</h2></center>
           <center><div class="mb-2">{{deck.desc|safe}}</div></center>
           {% if finished %}
-          <center><div class="mb-2"><b>恭喜! 这个牌组今天的部分已经学完.</b></div></center>
+          <center><div class="mb-2"><b>Congratulations! Today's part of this deck has been learned.</b></div></center>
           {% else %}
           <center>
             <div class="form-actions mb-2">
-              <button id="study_button" type="submit" onclick="jump_to_page('{{url_for('cards.card_study')}}')" class="btn btn-primary">开始学习</button>
+              <button id="study_button" type="submit" onclick="jump_to_page('{{url_for('cards.card_study')}}')" class="btn btn-primary">Start Studying</button>
             </div>
           </center>
           <div class="card-deck mb-3 text-center">
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h4 class="my-0 font-weight-normal">新卡片</h4>
+                <h4 class="my-0 font-weight-normal">New</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">{{newCount}} <small class="text-muted">张</small></h1>
+                <h1 class="card-title pricing-card-title">{{newCount}} <small class="text-muted">Cards</small></h1>
               </div>
             </div>
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h4 class="my-0 font-weight-normal">学习中</h4>
+                <h4 class="my-0 font-weight-normal">Learning</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">{{lrnCount}} <small class="text-muted">张</small></h1>
+                <h1 class="card-title pricing-card-title">{{lrnCount}} <small class="text-muted">Cards</small></h1>
               </div>
             </div>
             <div class="card mb-4 box-shadow">
               <div class="card-header">
-                <h4 class="my-0 font-weight-normal">待复习</h4>
+                <h4 class="my-0 font-weight-normal">To Review</h4>
               </div>
               <div class="card-body">
-                <h1 class="card-title pricing-card-title">{{revCount}} <small class="text-muted">张</small></h1>
+                <h1 class="card-title pricing-card-title">{{revCount}} <small class="text-muted">Cards</small></h1>
               </div>
             </div>
           </div>
